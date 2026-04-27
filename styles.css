@@ -8,7 +8,7 @@ body{
 svg{
   display: block;
   margin: 0 auto;
-  fill: black;
+  fill: brown;
 }
 
 .parentdiv{
@@ -18,20 +18,41 @@ svg{
   flex-direction: column;
   gap: 30px;
   padding: 20px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  background: linear-gradient(to bottom right, rgb(151, 198, 242), rgb(133, 212, 255));
+  border-style: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 20px grey;
 }
 
 .card-par{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 150px;
   height: 200px;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
+  border-style: none;
+  font-family: "Special Elite";
+  font-size: 100px;
+  color: brown;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px rgb(128, 128, 128);
+  background: linear-gradient(to bottom left, rgb(255, 249, 228), rgb(255, 224, 138))
+}
+
+.userPar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-style: none;
+  font-family: "Special Elite";
+  font-size: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px rgb(128, 128, 128);
+  background: linear-gradient(to top right, rgb(255, 191, 182), rgb(255, 140, 128))
 }
 
 .input-par{
@@ -39,14 +60,56 @@ svg{
   justify-content: center;
   align-items: center;
   gap: 15px;
+  border-radius: 10px;
+}
+
+.output-par{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  border-color: brown;
+  border-width: 3px;
+  padding: 3px;
 }
 
 .input-less, .input-greater{
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   width: 100px;
+  border-radius: 10px;
+  border-color: brown;
+  color: brown;
+  font-weight: bold;
+  border-width: 3px;
+  opacity: 0.5;
+  padding: 10px;
+  border-style: none;
+}
+
+.scoreStack, .statusStack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border-color: brown;
+  color: brown;
+  font-weight: bold;
+  border-width: 3px;
+  opacity: 0.5;
+  padding: 10px;
+  border-style: none;
+}
+
+.output-par:hover, .input-less:hover, .input-greater:hover{
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  padding: 0px;
+  opacity: 1;
 }
 
 .input-less{
@@ -55,7 +118,6 @@ svg{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: lightblue;
 }
 
 .input-greater{
@@ -64,7 +126,6 @@ svg{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: lightblue;
 }
 
 .inLabel1, .inLabel2{
