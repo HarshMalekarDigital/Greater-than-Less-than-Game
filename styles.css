@@ -1,0 +1,74 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+svg{
+  display: block;
+  margin: 0 auto;
+  fill: black;
+}
+
+.parentdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.card-par{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.input-par{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-less, .input-greater{
+  padding: 10px;
+  width: 100px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.input-less{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.input-greater{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.inLabel1, .inLabel2{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
