@@ -6,18 +6,31 @@
 <link rel="icon" href="https://i.postimg.cc/jSLBLYzB/icon.png">
 <link rel="stylesheet" href="styles.css">
 <script src="script.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="parentdiv">
-    <div class="card-par">Hi</div>
-      <div class="input-par">
-      <div class="input-less" onclick="lessThan();">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
-        <div class="inLabel1">Less Than</div>
+    <div class="card-par" id="cardpar">Hi</div>
+    <div class="userPar">
+      <div class="output-par">
+        <div class="scoreStack">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M360-720h80v-80h-80v80Zm160 0v-80h80v80h-80ZM360-400v-80h80v80h-80Zm320-160v-80h80v80h-80Zm0 160v-80h80v80h-80Zm-160 0v-80h80v80h-80Zm160-320v-80h80v80h-80Zm-240 80v-80h80v80h-80ZM200-160v-640h80v80h80v80h-80v80h80v80h-80v320h-80Zm400-320v-80h80v80h-80Zm-160 0v-80h80v80h-80Zm-80-80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm80-80v-80h80v80h-80Z"/></svg>
+          <div class="score" id="scoreDisplay" onclick="updateScore()">Win Count</div>
+        </div>
+        <div class="statusStack">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm285 93q35-35 35-85v-240H360v240q0 50 35 85t85 35q50 0 85-35Zm115-93q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+          <div class="status" id="statusDisplay" onclick="">Win Status</div>
+        </div>
       </div>
-      <div class="input-greater" onclick="greaterThan();">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
-        <div class="inLabel2">Greater Than</div>
+      <div class="input-par">
+        <div class="input-less" onclick="lessThan()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
+          <div class="inLabel1">Less Than</div>
+        </div>
+        <div class="input-greater" onclick="greaterThan();">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+          <div class="inLabel2">Greater Than</div>
+        </div>
       </div>
     </div>
   </div>
